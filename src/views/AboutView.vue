@@ -27,7 +27,7 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 @media (width >= 1024px) {
   .about {
     display: flex;
@@ -35,7 +35,7 @@ export default {
     min-height: 100vh;
 
     h1 {
-      color: red;
+      color: #f00;
     }
   }
 }

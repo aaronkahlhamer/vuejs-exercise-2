@@ -9,6 +9,6 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.validate": ["javascript", "javascriptvue", "vue"],
-  "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass", "html"],
+  "stylelint.validate": ["css", "postcss", "scss", "vue", "sass", "html"],
   "cSpell.words": ["stylelint", "pinia", "commitlint", "unplugin"]
 }

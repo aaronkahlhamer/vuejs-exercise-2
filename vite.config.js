@@ -15,9 +15,9 @@ export default ({ mode }) => {
     },
     css: {
       preprocessorOptions: {
-        less: {
+        scss: {
           modifyVars: {
-            hack: `true; @import (reference) "${resolve('src/style/variables.less')}";`,
+            hack: `true; @import (reference) "${resolve('src/style/variables.scss')}";`,
           },
           math: 'strict',
           javascriptEnabled: true,

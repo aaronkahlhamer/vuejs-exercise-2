@@ -1,12 +1,13 @@
 module.exports = {
   root: true,
   defaultSeverity: 'error',
-  plugins: ['stylelint-order', 'stylelint-less'],
+  plugins: ['stylelint-order'],
   extends: [
     'stylelint-config-standard', // the standard shareable config for Stylelint
     'stylelint-config-html/html', // the shareable html config for Stylelint.
     'stylelint-config-html/vue', // the shareable vue config for Stylelint.
     'stylelint-config-recess-order', // use the clean order for properties
+    'stylelint-config-sass-guidelines', // use the sass guidelines for properties
   ],
   rules: {
     // 禁止在覆盖高特异性选择器之后出现低特异性选择器
@@ -63,11 +64,11 @@ module.exports = {
       },
     },
     {
-      files: ['*.less', '**/*.less'],
-      customSyntax: 'postcss-less',
+      files: ['*.scss', '**/*.scss'],
+      customSyntax: 'postcss-scss',
       rules: {
-        'less/color-no-invalid-hex': true,
-        'less/no-duplicate-variables': true,
+        'color-no-invalid-hex': true,
+        'scss/no-duplicate-dollar-variables': true,
       },
     },
   ],
